@@ -4,22 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="bottom"
-    android:background="#2C2C2C"> <!-- Dark gray background -->
-
-    <!-- Écran de la calculatrice -->
-    <!-- White text color -->
-
-    <!-- Les boutons de la calculatrice -->
+    android:background="#2C2C2C">
 
     <TextView
         android:id="@+id/tvDisplay"
-        android:layout_width="367dp"
+        android:layout_width="371dp"
         android:layout_height="wrap_content"
         android:gravity="end"
         android:padding="16dp"
         android:text="0"
         android:textColor="#FFFFFF"
-        android:textSize="24sp" />
+        android:textSize="36dp" />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -28,7 +23,7 @@
         android:rowCount="5"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:layout_gravity="bottom" > <!-- Move the grid to the bottom -->
+        android:layout_gravity="bottom" >
 
         <!-- Boutons 1 à 9, +, -, *, /, C (Clear), =, et 0 -->
         <Button android:id="@+id/btnClear" android:text="C" style="@style/ButtonChangeStyle"/>
@@ -59,7 +54,6 @@
             style="@style/ButtonNumberStyle"
             />
         <Button android:id="@+id/btnDot" android:text="." style="@style/ButtonNumberStyle"/>
-@
         <Button android:id="@+id/btnEquals" android:text="=" style="@style/ButtonActionStyle"/>
     </GridLayout>
 
